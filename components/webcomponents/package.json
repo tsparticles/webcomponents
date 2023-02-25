@@ -57,7 +57,7 @@
     ],
     "main": "dist/web-particles.js",
     "repository": {
-        "url": "https://github.com/matteobruni/tsparticles",
+        "url": "https://github.com/tsparticles/webcomponents",
         "type": "git",
         "directory": "components/web"
     },
@@ -67,7 +67,7 @@
         "dist"
     ],
     "bugs": {
-        "url": "https://github.com/matteobruni/tsparticles/issues"
+        "url": "https://github.com/tsparticles/webcomponents/issues"
     },
     "homepage": "https://particles.js.org",
     "funding": [

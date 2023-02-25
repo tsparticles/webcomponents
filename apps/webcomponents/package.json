@@ -12,10 +12,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/matteobruni/tsparticles.git"
+        "url": "git+https://github.com/tsparticles/webcomponents.git"
     },
     "bugs": {
-        "url": "https://github.com/matteobruni/tsparticles/issues"
+        "url": "https://github.com/tsparticles/webcomponents/issues"
     },
     "scripts": {
         "start": "pnpm run build && node ./app.js",
