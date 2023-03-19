@@ -98,7 +98,7 @@
         "@types/node": "^18.14.0",
         "prettier": "^2.8.4",
         "rollup": "^3.8.1",
-        "@rollup/plugin-node-resolve": "^6.0.0",
+        "@rollup/plugin-node-resolve": "^15.0.0",
         "rollup-plugin-typescript2": "^0.34.1",
         "ts-node": "^10.9.1",
         "tslib": "^2.4.1",
