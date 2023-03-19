@@ -54,11 +54,11 @@ importers:
 
   components/webcomponents:
     specifiers:
+      '@rollup/plugin-node-resolve': ^6.0.0
       '@tsparticles/prettier-config': ^1.6.0
       '@types/node': ^18.14.0
       prettier: ^2.8.4
       rollup: ^3.8.1
-      rollup-plugin-node-resolve: ^5.2.0
       rollup-plugin-typescript2: ^0.34.1
       ts-node: ^10.9.1
       tslib: ^2.4.1
@@ -67,11 +67,11 @@ importers:
     dependencies:
       tsparticles-engine: 2.9.3
     devDependencies:
+      '@rollup/plugin-node-resolve': 6.1.0_rollup@3.9.0
       '@tsparticles/prettier-config': 1.6.0_prettier@2.8.4
       '@types/node': 18.14.0
       prettier: 2.8.4
       rollup: 3.9.0
-      rollup-plugin-node-resolve: 5.2.0_rollup@3.9.0
       rollup-plugin-typescript2: 0.34.1_lnwlm6rvbvfj7vxrynsjetdcpe
       ts-node: 10.9.1_w3gialtd35h6ptuevfzy5ddjvu
       tslib: 2.4.1
@@ -1427,6 +1427,32 @@ packages:
       typescript: 4.9.4
     dev: false
 
+  /@rollup/plugin-node-resolve/6.1.0_rollup@3.9.0:
+    resolution: {integrity: sha512-Cv7PDIvxdE40SWilY5WgZpqfIUEaDxFxs89zCAHjqyRwlTSuql4M5hjIuc5QYJkOH0/vyiyNXKD72O+LhRipGA==}
+    engines: {node: '>= 8.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0
+    dependencies:
+      '@rollup/pluginutils': 3.1.0_rollup@3.9.0
+      '@types/resolve': 0.0.8
+      builtin-modules: 3.3.0
+      is-module: 1.0.0
+      resolve: 1.22.1
+      rollup: 3.9.0
+    dev: true
+
+  /@rollup/pluginutils/3.1.0_rollup@3.9.0:
+    resolution: {integrity: sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==}
+    engines: {node: '>= 8.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0
+    dependencies:
+      '@types/estree': 0.0.39
+      estree-walker: 1.0.1
+      picomatch: 2.3.1
+      rollup: 3.9.0
+    dev: true
+
   /@rollup/pluginutils/4.2.1:
     resolution: {integrity: sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==}
     engines: {node: '>= 8.0.0'}
@@ -1468,6 +1494,10 @@ packages:
     resolution: {integrity: sha512-G4yqdVlhr6YhzLXFKy5F7HtRBU8Y23+iWy7UKthMq/OSQnL1hbsoeXESQ2LY8zEDlknipDG3nRGhUC9tkwvy/w==}
     dependencies:
       '@types/babel-types': 7.0.11
+    dev: true
+
+  /@types/estree/0.0.39:
+    resolution: {integrity: sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==}
     dev: true
 
   /@types/json-schema/7.0.11:
@@ -2890,8 +2920,8 @@ packages:
     resolution: {integrity: sha512-MMdARuVEQziNTeJD8DgMqmhwR11BRQ/cBP+pLtYdSTnf3MIO8fFeiINEbX36ZdNlfU/7A9f3gUw49B3oQsvwBA==}
     engines: {node: '>=4.0'}
 
-  /estree-walker/0.6.1:
-    resolution: {integrity: sha512-SqmZANLWS0mnatqbSfRP5g8OXZC12Fgg1IwNtLsyHDzJizORW4khDfjPqJZsemPWBB2uqykUah5YpQ6epsqC/w==}
+  /estree-walker/1.0.1:
+    resolution: {integrity: sha512-1fMXF3YP4pZZVozF8j/ZLfvnR8NSIljt56UhbZ5PeeDmmGHpgpdwQt7ITlGvYaQukCvuBRMLEiKiYC+oeIg4cg==}
     dev: true
 
   /estree-walker/2.0.2:
@@ -5425,20 +5455,6 @@ packages:
     dependencies:
       glob: 7.2.3
 
-  /rollup-plugin-node-resolve/5.2.0_rollup@3.9.0:
-    resolution: {integrity: sha512-jUlyaDXts7TW2CqQ4GaO5VJ4PwwaV8VUGA7+km3n6k6xtOEacf61u0VXwN80phY/evMcaS+9eIeJ9MOyDxt5Zw==}
-    deprecated: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-node-resolve.
-    peerDependencies:
-      rollup: '>=1.11.0'
-    dependencies:
-      '@types/resolve': 0.0.8
-      builtin-modules: 3.3.0
-      is-module: 1.0.0
-      resolve: 1.22.1
-      rollup: 3.9.0
-      rollup-pluginutils: 2.8.2
-    dev: true
-
   /rollup-plugin-typescript2/0.34.1_lnwlm6rvbvfj7vxrynsjetdcpe:
     resolution: {integrity: sha512-P4cHLtGikESmqi1CA+tdMDUv8WbQV48mzPYt77TSTOPJpERyZ9TXdDgjSDix8Fkqce6soYz3+fa4lrC93IEkcw==}
     peerDependencies:
@@ -5452,12 +5468,6 @@ packages:
       semver: 7.3.8
       tslib: 2.4.1
       typescript: 5.0.2
-    dev: true
-
-  /rollup-pluginutils/2.8.2:
-    resolution: {integrity: sha512-EEp9NhnUkwY8aif6bxgovPHMoMoNr2FulJziTndpt5H9RdwC47GSGuII9XxpSdzVGM0GWrNPHV6ie1LTNJPaLQ==}
-    dependencies:
-      estree-walker: 0.6.1
     dev: true
 
   /rollup/3.9.0:
