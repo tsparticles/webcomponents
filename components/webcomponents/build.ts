@@ -15,16 +15,7 @@ const rollupConfig = {
             "tsparticles"
         ],
         plugins: [
-            typescript({
-                check: false,
-                cacheRoot: path.join(path.resolve(), 'node_modules/.tmp/.rts2_cache'),
-                useTsconfigDeclarationDir: true,
-                tsconfigOverride: {
-                    compilerOptions: {
-                        module: "esnext"
-                    }
-                },
-            }),
+            typescript(),
             resolve()
         ],
         onwarn(warning: { code: string, message: string }) {
