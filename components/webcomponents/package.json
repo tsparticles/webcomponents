@@ -94,12 +94,12 @@
         "tsparticles-engine": "^2.9.3"
     },
     "devDependencies": {
-        "@tsparticles/prettier-config": "^1.6.0",
-        "@types/node": "^18.14.0",
-        "prettier": "^2.8.4",
-        "rollup": "^3.8.1",
-        "@rollup/plugin-node-resolve": "^15.0.0",
-        "rollup-plugin-typescript2": "^0.34.1",
+        "@tsparticles/prettier-config": "^1.9.0",
+        "@types/node": "^20.1.0",
+        "prettier": "^2.8.8",
+        "rollup": "^3.21.5",
+        "@rollup/plugin-node-resolve": "^15.0.2",
+        "@rollup/plugin-typescript": "^11.1.0",
         "ts-node": "^10.9.1",
         "tslib": "^2.4.1",
         "typescript": "^5.0.0"

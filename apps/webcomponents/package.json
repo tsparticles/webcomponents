@@ -25,22 +25,22 @@
         "build:style": "stylus ./public/stylesheets/main.styl"
     },
     "devDependencies": {
-        "@fortawesome/fontawesome-free": "^6.2.1",
-        "@typescript-eslint/eslint-plugin": "^5.48.2",
-        "@typescript-eslint/parser": "^5.48.2",
-        "@webcomponents/webcomponentsjs": "^2.7.0",
-        "eslint": "^8.32.0",
-        "eslint-config-prettier": "^8.6.0",
+        "@fortawesome/fontawesome-free": "^6.4.0",
+        "@typescript-eslint/eslint-plugin": "^5.59.2",
+        "@typescript-eslint/parser": "^5.59.2",
+        "@webcomponents/webcomponentsjs": "^2.8.0",
+        "eslint": "^8.40.0",
+        "eslint-config-prettier": "^8.8.0",
         "express": "^4.18.2",
         "helmet": "^7.0.0",
-        "prettier": "^2.8.3",
+        "prettier": "^2.8.8",
         "pug": "^3.0.2",
-        "pug-cli": "1.0.0-alpha6",
+        "pug-cli": "^1.0.0-alpha6",
         "stylus": "^0.59.0",
         "tsparticles": "^2.9.3",
         "tsparticles-demo-configs": "^2.9.3",
         "tsparticles-engine": "^2.9.3",
-        "typescript": "^5.0.0",
+        "typescript": "^5.0.4",
         "web-particles": "^2.9.3"
     }
 }

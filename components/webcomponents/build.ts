@@ -2,8 +2,8 @@ import * as path from 'path';
 
 import { InputOptions, OutputOptions, rollup, RollupOutput } from 'rollup';
 
-const typescript2 = require('rollup-plugin-typescript2');
-const resolve = require('rollup-plugin-node-resolve');
+const typescript = require('@rollup/plugin-typescript');
+const resolve = require('@rollup/plugin-node-resolve');
 
 const ENTRY_FILE = `src/Particles.ts`;
 
@@ -15,7 +15,7 @@ const rollupConfig = {
             "tsparticles"
         ],
         plugins: [
-            typescript2({
+            typescript({
                 check: false,
                 cacheRoot: path.join(path.resolve(), 'node_modules/.tmp/.rts2_cache'),
                 useTsconfigDeclarationDir: true,
