@@ -35,7 +35,7 @@
         "helmet": "^7.0.0",
         "prettier": "^2.8.8",
         "pug": "^3.0.2",
-        "stylus": "^0.59.0",
+        "stylus": "^0.60.0",
         "tsparticles": "^2.9.3",
         "tsparticles-demo-configs": "^2.9.3",
         "tsparticles-engine": "^2.9.3",
