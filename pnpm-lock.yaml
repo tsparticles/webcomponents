@@ -54,8 +54,8 @@ importers:
         specifier: ^3.0.2
         version: 3.0.2
       stylus:
-        specifier: ^0.59.0
-        version: 0.59.0
+        specifier: ^0.60.0
+        version: 0.60.0
       tsparticles:
         specifier: ^2.9.3
         version: 2.9.3
@@ -108,8 +108,8 @@ importers:
 
 packages:
 
-  /@adobe/css-tools@4.0.1:
-    resolution: {integrity: sha512-+u76oB43nOHrF4DDWRLWDCtci7f3QJoEBigemIdIeTi1ODqjx6Tad9NCVnPRwewWlKkVab5PlK8DCtPTyX7S8g==}
+  /@adobe/css-tools@4.2.0:
+    resolution: {integrity: sha512-E09FiIft46CmH5Qnjb0wsW54/YQd69LsxeKUOWawmws1XWvyFGURnAChH0mlr7YPFR1ofwvUQfcL0J3lMxXqPA==}
     dev: true
 
   /@babel/code-frame@7.18.6:
@@ -5596,11 +5596,11 @@ packages:
       through: 2.3.8
     dev: false
 
-  /stylus@0.59.0:
-    resolution: {integrity: sha512-lQ9w/XIOH5ZHVNuNbWW8D822r+/wBSO/d6XvtyHLF7LW4KaCIDeVbvn5DF8fGCJAUCwVhVi/h6J0NUcnylUEjg==}
+  /stylus@0.60.0:
+    resolution: {integrity: sha512-j2pBgEwzCu05yCuY4cmyp0FtPQQFBBAGB7TY7QaNl7eztiHwkxzwvIp5vjZJND/a1JNOka+ZW9ewVPFZpI3pcA==}
     hasBin: true
     dependencies:
-      '@adobe/css-tools': 4.0.1
+      '@adobe/css-tools': 4.2.0
       debug: 4.3.4
       glob: 7.2.3
       sax: 1.2.4
