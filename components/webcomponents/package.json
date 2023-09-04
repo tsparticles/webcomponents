@@ -100,7 +100,7 @@
   "devDependencies": {
     "@tsparticles/prettier-config": "^1.9.0",
     "@types/node": "^20.1.0",
-    "prettier": "^2.8.8",
+    "prettier": "^3.0.0",
     "rollup": "^3.21.5",
     "@rollup/plugin-node-resolve": "^15.0.2",
     "@rollup/plugin-typescript": "^11.1.0",
