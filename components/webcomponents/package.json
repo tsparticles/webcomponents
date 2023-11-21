@@ -98,7 +98,7 @@
     "tsparticles-engine": "^2.9.3"
   },
   "devDependencies": {
-    "@tsparticles/prettier-config": "^1.9.0",
+    "@tsparticles/prettier-config": "^2.0.0",
     "@types/node": "^20.1.0",
     "prettier": "^3.0.0",
     "rollup": "^3.21.5",
