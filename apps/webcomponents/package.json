@@ -36,7 +36,7 @@
         "prettier": "^3.0.0",
         "pug": "^3.0.2",
         "stylus": "^0.62.0",
-        "tsparticles": "^2.9.3",
+        "tsparticles": "^3.0.0",
         "tsparticles-demo-configs": "^2.9.3",
         "tsparticles-engine": "^2.9.3",
         "typescript": "^5.0.4",
