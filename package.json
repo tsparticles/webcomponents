@@ -9,7 +9,7 @@
   "dependencies": {
     "@commitlint/cli": "^17.6.3",
     "@commitlint/config-conventional": "^17.6.3",
-    "husky": "^8.0.3",
+    "husky": "^9.0.0",
     "lerna": "^7.0.0"
   },
   "workspaces": [
