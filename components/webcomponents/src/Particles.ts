@@ -1,9 +1,7 @@
 import type { Container, ISourceOptions, Engine } from "tsparticles-engine";
 
 declare global {
-    interface Window {
-        tsParticles: Engine;
-    }
+    var tsParticles: Engine;
 }
 
 export class Particles extends HTMLElement {
@@ -16,7 +14,7 @@ export class Particles extends HTMLElement {
 
         this.container.current?.destroy();
 
-        window.tsParticles
+        globalThis.tsParticles
             .setJSON(this.id, this, this._url ?? undefined)
             .then(container => this.notifyParticlesLoaded(container));
     }
@@ -30,7 +28,7 @@ export class Particles extends HTMLElement {
 
         this.container.current?.destroy();
 
-        window.tsParticles.set(this.id, this, this._options).then(container => this.notifyParticlesLoaded(container));
+        globalThis.tsParticles.set(this.id, this, this._options).then(container => this.notifyParticlesLoaded(container));
     }
 
     private _options?: ISourceOptions;
@@ -50,13 +48,14 @@ export class Particles extends HTMLElement {
         if (options) {
             try {
                 this._options = JSON.parse(options);
-            } catch {}
+            } catch {
+            }
         }
         this._url = this.getAttribute("url");
 
         this.dispatchEvent(
             new CustomEvent("particlesInit", {
-                detail: window.tsParticles,
+                detail: globalThis.tsParticles,
             })
         );
     }
@@ -67,11 +66,11 @@ export class Particles extends HTMLElement {
         }
 
         if (this._url) {
-            window.tsParticles
+            globalThis.tsParticles
                 .setJSON(this.id, this, this._url)
                 .then(container => this.notifyParticlesLoaded(container));
         } else if (this._options) {
-            window.tsParticles
+            globalThis.tsParticles
                 .set(this.id, this, this._options)
                 .then(container => this.notifyParticlesLoaded(container));
         }
