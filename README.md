@@ -98,6 +98,28 @@ yarn add @tsparticles/webcomponents
 />
 ```
 
+### Styling the particles container
+
+The `web-particles` custom element can be styled directly with standard HTML attributes:
+
+```html
+<web-particles
+    id="tsparticles"
+    class="demo-particles"
+    style="position: fixed; inset: 0; z-index: -1;"
+    url="/tsparticles-demo-configs/basic.json"
+></web-particles>
+```
+
+## Workspace Build Architecture
+
+This repository now supports both orchestrators:
+
+- `pnpm run build`
+- `pnpm run build:ci`
+- `pnpm run build:lerna`
+- `pnpm run build:nx`
+
 ## Demos
 
 The demo website is [here](https://particles.js.org)

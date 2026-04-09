@@ -91,7 +91,7 @@
     },
     "prettier": "@tsparticles/prettier-config",
     "dependencies": {
-        "@tsparticles/engine": "^4.0.0-beta.11"
+        "@tsparticles/engine": "^3.9.1"
     },
     "devDependencies": {
         "@tsparticles/prettier-config": "^1.5.0",
