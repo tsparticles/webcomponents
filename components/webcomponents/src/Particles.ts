@@ -1,4 +1,4 @@
-import type { Container, ISourceOptions, Engine } from "tsparticles-engine";
+import type { Container, ISourceOptions, Engine } from "@tsparticles/engine";
 
 declare global {
     interface Window {
@@ -17,7 +17,7 @@ export class Particles extends HTMLElement {
         this.container.current?.destroy();
 
         window.tsParticles
-            .setJSON(this.id, this, this._url ?? undefined)
+            .load({ id: this.id, url: this._url ?? undefined })
             .then(container => this.notifyParticlesLoaded(container));
     }
 
@@ -30,7 +30,7 @@ export class Particles extends HTMLElement {
 
         this.container.current?.destroy();
 
-        window.tsParticles.set(this.id, this, this._options).then(container => this.notifyParticlesLoaded(container));
+        window.tsParticles.load({ id: this.id, options: this._options }).then(container => this.notifyParticlesLoaded(container));
     }
 
     private _options?: ISourceOptions;
@@ -68,11 +68,11 @@ export class Particles extends HTMLElement {
 
         if (this._url) {
             window.tsParticles
-                .setJSON(this.id, this, this._url)
+                .load({ id: this.id, url: this._url })
                 .then(container => this.notifyParticlesLoaded(container));
         } else if (this._options) {
             window.tsParticles
-                .set(this.id, this, this._options)
+                .load({ id: this.id, options: this._options })
                 .then(container => this.notifyParticlesLoaded(container));
         }
     }
