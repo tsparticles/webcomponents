@@ -14,7 +14,7 @@ app.use(stylus.middleware('./public'));
 app.use(express.static('./public'));
 app.use("/tsparticles", express.static("./node_modules/tsparticles"));
 app.use("/tsparticles-demo-configs", express.static("./node_modules/tsparticles-demo-configs"));
-app.use("/web-particles", express.static("./node_modules/@tsparticles/webcomponents/dist"));
+app.use("/web-particles", express.static("./node_modules/web-particles/dist"));
 app.use("/webcomponentsjs", express.static("./node_modules/@webcomponents/webcomponentsjs/"));
 
 app.get('/', function (req, res) {
